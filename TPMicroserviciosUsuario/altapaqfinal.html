@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/altafinal.css" rel="stylesheet" type="text/css">
+    <title>Confirmar Pedido</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Por favor, compruebe que los datos sean correctos</p>
+        </div>
+        <form class="form-group" submit="event.preventDefault(); crearPaquete();">
+            <h3>Datos del Remitente</h3>
+            <input type="text" id="nombreRemitente" placeholder="Nombre Remitente" required />
+            <input type="text" id="apellidoRemitente" placeholder="Apellido Remitente" required />
+            <input type="number" id="dniRemitente" placeholder="DNI Remitente" required />
+            <input type="number" id="telefonoRemitente" placeholder="Teléfono Remitente" required />
+            <input type="email" id="emailRemitente" placeholder="Email Remitente" required />
+            <input type="text" id="calleRemitente" placeholder="Calle Remitente" required />
+            <input type="number" id="alturaRemitente" placeholder="Altura Calle Remitente" required />
+            <input type="text" id="localidadRemitente" placeholder="Localidad Remitente" required />
+
+            <h3>Datos del Destinatario</h3>
+            <input type="text" id="nombreDestinatario" placeholder="Nombre Destinatario" required />
+            <input type="text" id="apellidoDestinatario" placeholder="Apellido Destinatario" required />
+            <input type="number" id="dniDestinatario" placeholder="DNI Destinatario" required />
+            <input type="number" id="telefonoDestinatario" placeholder="Teléfono Destinatario" required />
+            <input type="email" id="emailDestinatario" placeholder="Email Destinatario" required />
+            <input type="text" id="calleDestinatario" placeholder="Calle Destinatario" required />
+            <input type="number" id="alturaDestinatario" placeholder="Altura Calle Destinatario" required />
+            <input type="text" id="localidadDestinatario" placeholder="Localidad Destinatario" required />
+
+            <h3>Datos del Paquete</h3>
+            <input type="number" id="precioPaquete" placeholder="Precio Paquete" required />
+
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-primary" onclick="crearPaquete()">Crear paquete</button>
+            </div>
+            <p id="result"></p>
+        </form>
+
+        <p><input type="button" value="Volver al menú" OnClick="location.href='index.html'"></p>
+    </div>
+    <script src="js/consultascript.js"></script>
+</body>
+
+</html>
